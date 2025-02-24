@@ -1,8 +1,5 @@
 html {
         font-family: "Noto Sans Lao", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
         font-variation-settings:
           "wdth" 100;
       
@@ -47,7 +44,7 @@ body {
 }
 
 .profile-card {
-    width: clamp(428px, 990px, 990px);
+    /* width: clamp(428px, 990px, 990px); */
     height: 670px;
     background-color: var(--primary-bg);
     border-radius: 40px;
@@ -143,19 +140,19 @@ body {
             justify-content: space-between;
             color: var(--secondary-color);
             padding: 30px;
-            text-align: center;
+            text-align: left;
             border: 1px solid var(--border-color);
             border-radius: 15px;
         }
             .important-data {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: left;
             }
             .other-data {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: left;
 
                 background-color: var(--secondary-bg);
                 padding: 15px;
@@ -194,19 +191,19 @@ body {
             padding: 10px;
 
             display: grid;
-            grid-template-rows: 70% auto max-content;
+            grid-template-rows: 60% auto max-content;
             gap: 10px;
         }
             .post-cover {
                 position: relative;
-                background: url('last-post.jpg') center;
+                /* background: url('last-post.jpg') center; */
                 background-size: cover;
                 border-radius: 5px;
             }
                 .last-badge {
                     position: absolute;
                     inset: 3px 3px auto auto;
-                    background-color: rgba(0,0,0, 70%);
+                    background-color: rgba(0,0,0, 60%);
                     color: var(--primary-color);
                     padding: 5px;
                     border-radius: 3px;
@@ -225,7 +222,7 @@ body {
             }
 
 /* ------------ media queries */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
     .last-post {
         display: none;
     }
@@ -235,7 +232,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .profile-card {
         height: 100%;
         border-radius: 0;
